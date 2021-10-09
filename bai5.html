@@ -3,22 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
-        let poin = +prompt("Nhập điểm học sinh: ");
-        if(poin >= 75){
-            alert(" Học sinh xếp loại A ");
-        } else if(poin>= 65) {
-            alert("Học sinh xếp loại B");
-        }else if(poin>= 55) {
-            alert("Học sinh xếp loại C");
-        }else if(poin>= 35) {
-            alert("Học sinh xếp loại D");
-        }else {
-            alert("Học sinh xếp loại E");
-        }
-    </script>
 </head>
 <body>
-
+<script>
+    let a = +prompt("Nhập chiều cao tam giác vuông");
+    let b = +prompt("Nhập chiều dài cạnh đáy tam giác vuông");
+    area = a*b/2;
+    alert("Diện tích tam giác vuông là " +area);
+</script>
 </body>
 </html>

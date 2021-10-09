@@ -3,18 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
-        let a = +prompt("Nhập a: ",'');
-        let b = +prompt("Nhập b:", '');
-        if(a%b == 0){
-            alert("a chia hết cho b");
-        }else {
-            alert(" a không chia hết cho b");
-        }
-
-    </script>
 </head>
 <body>
-
+<script>
+  let doC = +prompt("Vui lòng nhập độ C : ");
+  let doF = doC*9/5 +32;
+  document.write("Độ C "+doC + " bằng " + doF + " F ");
+</script>
 </body>
 </html>

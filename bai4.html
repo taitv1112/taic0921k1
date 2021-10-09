@@ -3,28 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <script>
-    let a = + prompt("Nhập số nguyên a: ");
-    let b = + prompt("Nhập số nguyên b: ");
-    let c = + prompt("Nhập số nguyên c: ");
-    if(a>b){
-        if(a>c){
-            alert("Số nguyên lơn nhất là: " +a);
-        }
-        else {
-            alert("Số nguyên lớn nhất là " +c)
-        }
-    }else {
-        if(b>c){
-            alert("Số nguyên lơn nhất là: " +b);
-        }
-        else {
-            alert("Số nguyên lớn nhất là " +c)
-        }
-    }
-  </script>
 </head>
 <body>
-
+<script>
+  let a = +prompt("Nhập độ dài cạnh hình chữ nhật");
+  let b = +prompt("Nhập chiều cạnh hình chữ nhật");
+  area = a*b;
+  alert("Diện tích hình chữ nhật là " +area);
+</script>
 </body>
 </html>
