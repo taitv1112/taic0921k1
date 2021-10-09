@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+      //Phí thuê bao bắt buộc là 25 nghìn.
+      //600 đồng cho mỗi gọi của 50 phút đầu tiên.
+      //400 đồng cho mỗi phút gọi của 150 phút tiếp theo.
+      //200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên
+      let minutes = prompt("Nhập số phút đã sử dụng : ")  ;
+      let price ;
+      const fixedPrice = 25000;
+      let Total ;
+      if(minutes>200){
+          price = (minutes-200)*200 + 150*400 + 50*600;
+      }else if( minutes>50){
+          price = (minutes-150)*400 + 50*600;
+      }else {
+          price = minutes*600;
+      }
+      Total = price + fixedPrice;
+      document.write("Bạn đã gọi:" +minutes+ " phút. Số tiền phải nộp là " + Total+ "vnd");
+  </script>
+</head>
+<body>
+
+</body>
+</html>

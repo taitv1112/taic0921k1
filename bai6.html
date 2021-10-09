@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let sale = +prompt("Nhập doanh số bán hàng tháng này: ");
+        let s= parseFloat(sale);
+        let commission ;
+        let c = parseFloat(commission);
+        if(sale >= 1000){
+            c = 0.5*s;
+            document.write("Hoa hông bán hàng tháng này là: " +c +"usd");
+        } else if(sale>= 600) {
+            c = 0.3*s;
+            document.write("Hoa hông bán hàng tháng này là: " +c +"usd");
+        }else {
+            c=0.1*s;
+            document.write("Hoa hông bán hàng tháng này là: " +c +" 60" +
+                "80usd");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
