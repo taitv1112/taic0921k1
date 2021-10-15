@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+<!--Ứng dụng hiển thị cửa sổ prompt cho phép người dùng nhập vào muốn đoán trong khoảng nào-->
+<!--Ứng dụng chọn ra số ngẫu nhiên trong khoảng mà ngườI dùng chọn-->
+<!--Ứng dụng hiển thị cửa số prompt cho người dùng nhập giá trị mà người dùng đoán-->
+<!--Ứng dụng lấy kết quả và so sánh với giá trị ngẫu nhiên.-->
+<!--Nếu bằng thì hiển thị thông báo chúc mừng và kết thúc lượt chơi-->
+<!--Nếu lớn hơn hoặc bé thua thì hiển thị thông báo lớn hơn hay bé thua và cho phép người dùng lựa chọn lại.-->
+<!--Chú ý: Người dùng chỉ được lựa chọn tối đa ba lần-->
+<script>
+    let firstNumber = +prompt("Vui lòng nhập số đầu tiên: ");
+    let lastNumber = +prompt("Vui lòng nhập số cuối cùng:   ");
+    let luckyNumber;
+        if(firstNumber >lastNumber){
+        luckyNumber =Math.floor(Math.random()*(firstNumber-lastNumber +1)) + lastNumber;
+    } else {
+        luckyNumber = Math.floor(Math.random()*(lastNumber-firstNumber +1)) +firstNumber;
+    }
+        for (let i=0;i<=2 ;i++){
+            let numbers = +prompt("Vui lòng nhập số dự đoán");
+            if(luckyNumber === numbers) {
+                alert("Chúc Mừng bạn đã đoán đúng !")
+                break;
+            }else {
+                if(luckyNumber> numbers){
+                    alert("Bạn hãy nhập số lớn hơn !")
+                }else {
+                    alert("Bạn hãy nhập số nhỏ hơn !")
+                }
+
+            }
+        }
+    
+</script>
+</body>
+</html>
